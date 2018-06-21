@@ -106,8 +106,8 @@
                 "c8cefb6c.0c9828"
             ]
         ],
-        "x": 890,
-        "y": 140,
+        "x": 230,
+        "y": 200,
         "z": "1db1ae9c.679261"
     },
     {
@@ -117,8 +117,8 @@
         "statusCode": "200",
         "type": "http response",
         "wires": [],
-        "x": 1120,
-        "y": 140,
+        "x": 460,
+        "y": 200,
         "z": "1db1ae9c.679261"
     },
     {
@@ -135,7 +135,7 @@
             ]
         ],
         "x": 100,
-        "y": 300,
+        "y": 360,
         "z": "1db1ae9c.679261"
     },
     {
@@ -153,8 +153,8 @@
                 "2391e54c.1b6c5a"
             ]
         ],
-        "x": 450,
-        "y": 300,
+        "x": 430,
+        "y": 360,
         "z": "1db1ae9c.679261"
     },
     {
@@ -165,7 +165,7 @@
         "type": "http response",
         "wires": [],
         "x": 610,
-        "y": 300,
+        "y": 360,
         "z": "1db1ae9c.679261"
     },
     {
@@ -314,7 +314,7 @@
         "type": "function",
         "wires": [
             [
-                "1d520ebd.fcb361"
+                "87a11301.5df95"
             ]
         ],
         "x": 250,
@@ -328,13 +328,13 @@
         "ret": "txt",
         "tls": "",
         "type": "http request",
-        "url": "https://us1.locationiq.org/v1/reverse.php?key=91eac0347bf2a6&lat={{{lat}}}&lon={{{lon}}}&format=json",
+        "url": "https://us1.locationiq.org/v1/reverse.php?key={{{API_key}}}&lat={{{lat}}}&lon={{{lon}}}&format=json",
         "wires": [
             [
                 "69bab8d5.008d58"
             ]
         ],
-        "x": 520,
+        "x": 680,
         "y": 140,
         "z": "1db1ae9c.679261"
     },
@@ -347,10 +347,10 @@
         "type": "json",
         "wires": [
             [
-                "8b3db5c8.2a59f8"
+                "89a604c3.382188"
             ]
         ],
-        "x": 710,
+        "x": 850,
         "y": 140,
         "z": "1db1ae9c.679261"
     },
@@ -370,7 +370,7 @@
             ]
         ],
         "x": 280,
-        "y": 300,
+        "y": 360,
         "z": "1db1ae9c.679261"
     },
     {
@@ -417,8 +417,8 @@
         "name": "HTML UI",
         "type": "comment",
         "wires": [],
-        "x": 120,
-        "y": 260,
+        "x": 420,
+        "y": 300,
         "z": "1db1ae9c.679261"
     },
     {
@@ -427,8 +427,55 @@
         "name": "World Map UI",
         "type": "comment",
         "wires": [],
-        "x": 210,
+        "x": 330,
         "y": 480,
+        "z": "1db1ae9c.679261"
+    },
+    {
+        "id": "87a11301.5df95",
+        "name": "Credentials",
+        "props": [
+            {
+                "type": "msg",
+                "value": "API_key"
+            }
+        ],
+        "type": "credentials",
+        "wires": [
+            [
+                "1d520ebd.fcb361"
+            ]
+        ],
+        "x": 470,
+        "y": 140,
+        "z": "1db1ae9c.679261"
+    },
+    {
+        "id": "c620a06d.65c05",
+        "links": [
+            "89a604c3.382188"
+        ],
+        "name": "",
+        "type": "link in",
+        "wires": [
+            [
+                "8b3db5c8.2a59f8"
+            ]
+        ],
+        "x": 75,
+        "y": 200,
+        "z": "1db1ae9c.679261"
+    },
+    {
+        "id": "89a604c3.382188",
+        "links": [
+            "c620a06d.65c05"
+        ],
+        "name": "",
+        "type": "link out",
+        "wires": [],
+        "x": 995,
+        "y": 140,
         "z": "1db1ae9c.679261"
     }
 ]
