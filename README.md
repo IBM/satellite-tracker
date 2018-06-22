@@ -3,13 +3,13 @@
 [![Build Status](https://travis-ci.org/IBM/casis-satellite-tracker.svg?branch=master)](https://travis-ci.org/IBM/casis-satellite-tracker)
 # CASIS Satellite Tracker
 
-In this Code Pattern, we will build a satellite tracker using Node Red and IBM Watson.
+In this Code Pattern, we will build a satellite tracker using  Node-RED and IBM Watson.
 A flow will be created for connecting a Watson Assistant Chatbot with a node-red-contrib-satellites node, as well as a web UI and worldmap node.
 
 When the reader has completed this Code Pattern, they will understand how to:
 
-* Build a complex flow and web UI using simple Node Red tools.
-* Implement a chatbot with Watson Assistant and embed it on a web page with Node Red.
+* Build a complex flow and web UI using simple Node-RED tools.
+* Implement a chatbot with Watson Assistant and embed it on a web page with Node-RED.
 * Get satellite information for the International Space Station (ISS) and use it in a web app.
 
 ![](doc/source/images/architecture.png)
@@ -31,7 +31,9 @@ When the reader has completed this Code Pattern, they will understand how to:
 * [Artificial Intelligence](https://medium.com/ibm-data-science-experience): Artificial intelligence can be applied to disparate solution spaces to deliver disruptive technologies.
 * [Node.js](https://nodejs.org/): An open-source JavaScript run-time environment for executing server-side JavaScript code.
 
+<!--
 # Watch the Video
+-->
 
 # Steps
 
@@ -39,10 +41,14 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 1. [Clone the repo](#1-clone-the-repo)
 1. [Create Watson services with IBM Cloud](#2-create-watson-services-with-ibm-cloud)
-1. [Create a Node Red Workspace](#3-create-a-node-red-workspace)
-1. [Import the Conversation workspace](#4-import-the-conversation-workspace)
-1. [Configure credentials](#5-configure-credentials)
-1. [Run the application](#6-run-the-application)
+1. [Import the Watson Assistant workspace](#3-import-the-watson-assistant-workspace)
+1. [Get the Watson Assistant credentials](#4-get-the-watson-assistant-credentials)
+1. [Create a Node-RED Workspace](#5-create-a-node-red-workspace)
+1. [Install additional nodes and Perform either 6a or 6b](#6-install-additional-nodes)
+
+    6a. [Build the Node-RED flow manually](#6a-build-the-node-red-flow-manually)
+
+    6b. [Import the completed flow](#6b-import-the-completed-flow)
 
 ### 1. Clone the repo
 
@@ -54,32 +60,78 @@ $ git clone https://github.com/IBM/casis-satellite-tracker
 
 ### 2. Create Watson services with IBM Cloud
 
-Create the following services:
+Create the [*Watson Assistant*](https://console.ng.bluemix.net/catalog/services/conversation) service by providing a name of your choice and clicking `Create`.
 
-* [**Watson Assistant**](https://console.ng.bluemix.net/catalog/services/conversation)
+Once created, you'll see the credentials for *username* and *password* that you should copy down to be used later. (Click `Show` to expose them).
 
-### 4. Import the Conversation workspace
+![](doc/source/images/WatsonAssistantCredentials.png)
 
-Launch the **Watson Conversation** tool. Use the **import** icon button on the right
+### 3. Import the Watson Assistant workspace
 
-Find the local version of [`data/workspaces/satelliteChat.json`](data/workspaces/satelliteChat.json) and select
-**Import**. Find the **Workspace ID** by clicking on the context menu of the new
-workspace and select **View details**. Save this ID for later.
+Once you have created your instance of Watson Assistant, click `Launch Tool`, then click the `Workspaces` tab. Import the workspace by clicking the upload icon:
 
-*Optionally*, to view the conversation dialog select the workspace and choose the
-**Dialog** tab, here's a snippet of the dialog:
+![](doc/source/images/UploadWorkspaceJson.png)
 
-![](doc/source/images/dialog.PNG)
+Click `Choose a file` and navigate to [`data/workspaces/SatTrackWorkspace.json`](data/workspaces/SatTrackWorkspace.json) in this repo. Click `Import`.
 
-### 5. Configure credentials
+Get the Workspace ID by clicking the 3 vertical dots on the `Workspaces` tab. Save this for later.
+
+<p align="center">
+  <img width="200" height="300" src="doc/source/images/GetAssistantDetails.png">
+</p>
+
+### 4. Get the Watson Assistant credentials
 
 The credentials for IBM Cloud Watson Assistant service can be found
-by selecting the ``Service Credentials`` option for each service.
+by selecting the ``Service Credentials`` option for the service. You
+saved these in [step #2](#2-create-watson-services-with-ibm-cloud).
 
-The other settings for the Assistant Workspace was collected in the
-earlier setup step: ``WORKSPACE_ID``.
+The `WORKSPACE_ID` for the Watson Assistant workspace was saved in
+[step #3](#3-import-the-watson-assistant-workspace).
 
-### 6. Run the application
+### 5. Create a Node-RED Workspace
+
+From the the [IBM Cloud Catalog](https://console.bluemix.net/catalog/) navigate to `Platform` -> `Boilerplates` and choose [Node-RED Starter](https://console.bluemix.net/catalog/starters/node-red-starter). Choose a name and click `Create`.
+
+Once the App has deployed, click on `Visit App URL`
+
+![](doc/source/images/NodeRedVisitAppURL.png)
+
+Follow the instructions to `Secure your Node-RED editor` and `Browse available IBM Cloud nodes`. Click `Finish` and then click `Go to your Node-RED flow editor`.
+
+### 6 Install additional nodes
+
+You will need to install the following additional nodes:
+
+* [node-red-contrib-credentials](https://flows.nodered.org/node/node-red-contrib-credentials)
+* [node-red-contrib-web-worldmap](https://flows.nodered.org/node/node-red-contrib-web-worldmap)
+* [node-red-contrib-satellites](https://flows.nodered.org/node/node-red-contrib-satellites)
+
+
+### 6.a Build the Node-RED flow manually
+
+### 6.b Import the completed Flow
+
+We will walk through the steps to build the Node-RED flow, but you can import the completed Flow. Copy the flow to your machine's clipboard by navigating to `data/Node/`.
+
+A flow can be moved to a Mac OS clipboard with:
+```
+$ pbcopy < ISS_flow.json
+```
+
+On Windows use:
+```
+$ cat ISS_flow.json | clip
+```
+
+On Linux use:
+```
+$ cat ISS_flow.json | xclip
+```
+
+Once the `ISS_flow.json` is on your clipboard, Click the upper-right menu icon and choose `Import` -> `Clipboard`. Paste the contents of your clipboard and click `Import`.
+
+![](doc/source/images/ImportNodeREDflowToClipboard.png)
 
 # Sample output
 
