@@ -99,13 +99,21 @@ Once the App has deployed, click on `Visit App URL`
 
 Follow the instructions to `Secure your Node-RED editor` and `Browse available IBM Cloud nodes`. Click `Finish` and then click `Go to your Node-RED flow editor`.
 
-### 6 Install additional nodes
+### 6. Install additional nodes
 
 You will need to install the following additional nodes:
 
 * [node-red-contrib-credentials](https://flows.nodered.org/node/node-red-contrib-credentials)
 * [node-red-contrib-web-worldmap](https://flows.nodered.org/node/node-red-contrib-web-worldmap)
 * [node-red-contrib-satellites](https://flows.nodered.org/node/node-red-contrib-satellites)
+
+Click the menu icon in the upper right and then `Manage palette`.
+
+![](https://github.com/IBM/pattern-images/blob/master/node-red/NodeREDmanagePallete.png)
+
+Click the `Install tab` and enter the name of the node you wish to install into the search bar, then click `install`.
+
+![](https://github.com/IBM/pattern-images/blob/master/node-red/NodeREDInstallSearch.png)
 
 ### 6.b Import the completed Flow
 
