@@ -46,7 +46,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 1. [Create a Node-RED Workspace](#5-create-a-node-red-workspace)
 1. [Install additional nodes and Perform either 6a or 6b](#6-install-additional-nodes)
 
-    6a. [Build the Node-RED flow manually](#6a-build-the-node-red-flow-manually)
+    6a. [Build the Node-RED flow manually](doc/CreateFlow.md)
 
     6b. [Import the completed flow](#6b-import-the-completed-flow)
 
@@ -106,9 +106,6 @@ You will need to install the following additional nodes:
 * [node-red-contrib-credentials](https://flows.nodered.org/node/node-red-contrib-credentials)
 * [node-red-contrib-web-worldmap](https://flows.nodered.org/node/node-red-contrib-web-worldmap)
 * [node-red-contrib-satellites](https://flows.nodered.org/node/node-red-contrib-satellites)
-
-
-### 6.a Build the Node-RED flow manually
 
 ### 6.b Import the completed Flow
 
