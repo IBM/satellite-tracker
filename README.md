@@ -115,6 +115,10 @@ Click the `Install tab` and enter the name of the node you wish to install into 
 
 ![](https://github.com/IBM/pattern-images/blob/master/node-red/NodeREDInstallSearch.png)
 
+### 6.a Build the Node-RED flow manually
+
+Follow these instructions to [Build the Node-RED flow manually](doc/CreateFlow.md).
+
 ### 6.b Import the completed Flow
 
 We will walk through the steps to build the Node-RED flow, but you can import the completed Flow. Copy the flow to your machine's clipboard by navigating to `data/Node/`.
