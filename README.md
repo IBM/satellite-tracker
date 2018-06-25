@@ -64,20 +64,20 @@ Create the [*Watson Assistant*](https://console.ng.bluemix.net/catalog/services/
 
 Once created, you'll see the credentials for *username* and *password* that you should copy down to be used later. (Click `Show` to expose them).
 
-![](doc/source/images/WatsonAssistantCredentials.png)
+![](https://github.com/IBM/pattern-images/blob/master/watson-assistant/WatsonAssistantCredentials.png)
 
 ### 3. Import the Watson Assistant workspace
 
 Once you have created your instance of Watson Assistant, click `Launch Tool`, then click the `Workspaces` tab. Import the workspace by clicking the upload icon:
 
-![](doc/source/images/UploadWorkspaceJson.png)
+![](https://github.com/IBM/pattern-images/blob/master/watson-assistant/UploadWorkspaceJson.png)
 
 Click `Choose a file` and navigate to [`data/workspaces/SatTrackWorkspace.json`](data/workspaces/SatTrackWorkspace.json) in this repo. Click `Import`.
 
 Get the Workspace ID by clicking the 3 vertical dots on the `Workspaces` tab. Save this for later.
 
 <p align="center">
-  <img width="200" height="300" src="doc/source/images/GetAssistantDetails.png">
+  <img width="200" height="300" src="https://github.com/IBM/pattern-images/blob/master/watson-assistant/GetAssistantDetails.png">
 </p>
 
 ### 4. Get the Watson Assistant credentials
@@ -95,7 +95,7 @@ From the the [IBM Cloud Catalog](https://console.bluemix.net/catalog/) navigate 
 
 Once the App has deployed, click on `Visit App URL`
 
-![](doc/source/images/NodeRedVisitAppURL.png)
+![](https://github.com/IBM/pattern-images/blob/master/node-red/NodeRedVisitAppURL.png)
 
 Follow the instructions to `Secure your Node-RED editor` and `Browse available IBM Cloud nodes`. Click `Finish` and then click `Go to your Node-RED flow editor`.
 
@@ -131,7 +131,7 @@ $ cat ISS_flow.json | xclip
 
 Once the `ISS_flow.json` is on your clipboard, Click the upper-right menu icon and choose `Import` -> `Clipboard`. Paste the contents of your clipboard and click `Import`.
 
-![](doc/source/images/ImportNodeREDflowToClipboard.png)
+![](https://github.com/IBM/pattern-images/blob/master/node-red/ImportNodeREDflowToClipboard.png)
 
 # Sample output
 
