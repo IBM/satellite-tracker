@@ -4,7 +4,9 @@ In order to build the Node-RED flow for the CASIS satellite tracker, you will us
 
 > NOTE: You can find nodes in the `filter nodes` search box in the upper left of the flow editor.
 
-![](https://github.com/IBM/pattern-images/blob/master/node-red/NodeREDfilterNodes.png)
+<p align="center">
+  <img width="100" height="300" src="https://github.com/IBM/pattern-images/blob/master/node-red/NodeREDfilterNodes.png">
+</p>
 
 #### Create the HTML UI
 
@@ -26,7 +28,9 @@ In order to build the Node-RED flow for the CASIS satellite tracker, you will us
 
 * Double-click both `inject` nodes (labeled `timestamp`) and tick the checkbox for ` Inject once after 0.1 seconds, then`. On the lower one, which feeds the `satellite` node, choose `Repeat` -> `interval` and set the interval to every `1` `minutes`.
 
-![](doc/source/images/NodeREDinjectEveryMinute.png)
+<p align="center">
+  <img width="400" height="300" src="source/images/NodeREDinjectEveryMinute.png">
+</p>
 
 * Double-click the `satellite` node and you should see `Sat. Type` -> `Space Stations` and `Satellite` -> `ISS (ZARYA)`. Click `Done`.
 
