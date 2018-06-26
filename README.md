@@ -44,11 +44,12 @@ When the reader has completed this Code Pattern, they will understand how to:
 1. [Import the Watson Assistant workspace](#3-import-the-watson-assistant-workspace)
 1. [Get the Watson Assistant credentials](#4-get-the-watson-assistant-credentials)
 1. [Create a Node-RED Workspace](#5-create-a-node-red-workspace)
-1. [Install additional nodes and Perform either 6a or 6b](#6-install-additional-nodes)
+1. [Get a LocationIQ API key](#6-get-a-locationiq-api-key)
+1. [Install additional nodes and Perform either 7a or 7b](#7-install-additional-nodes)
 
-    6a. [Build the Node-RED flow manually](doc/CreateFlow.md)
+    7a. [Build the Node-RED flow manually](doc/CreateFlow.md)
 
-    6b. [Import the completed flow](#6b-import-the-completed-flow)
+    7b. [Import the completed flow](#7b-import-the-completed-flow)
 
 ### 1. Clone the repo
 
@@ -99,7 +100,13 @@ Once the App has deployed, click on `Visit App URL`
 
 Follow the instructions to `Secure your Node-RED editor` and `Browse available IBM Cloud nodes`. Click `Finish` and then click `Go to your Node-RED flow editor`.
 
-### 6. Install additional nodes
+### 6. Get a LocationIQ API key
+
+You will need an API key from [LocationIQ](https://locationiq.com/) for the reverse geocoding function in this app.
+
+* Visit the [LocationIQ website](https://locationiq.com/) and scroll down to `Excited?! Get a developer token!`. Input your name and email and follow the instructions to get an API token. Save this for later, when you configure the `credentials` node.
+
+### 7. Install additional nodes
 
 You will need to install the following additional nodes:
 
@@ -115,11 +122,11 @@ Click the `Install tab` and enter the name of the node you wish to install into 
 
 ![](https://github.com/IBM/pattern-images/blob/master/node-red/NodeREDInstallSearch.png)
 
-### 6.a Build the Node-RED flow manually
+### 7.a Build the Node-RED flow manually
 
 Follow these instructions to [Build the Node-RED flow manually](doc/CreateFlow.md).
 
-### 6.b Import the completed Flow
+### 7.b Import the completed Flow
 
 We will walk through the steps to build the Node-RED flow, but you can import the completed Flow. Copy the flow to your machine's clipboard by navigating to `data/Node/`.
 
