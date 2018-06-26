@@ -24,7 +24,7 @@ In order to build the Node-RED flow for the CASIS satellite tracker, you will us
 
 * Wire them up:
 
-![](doc/source/images/WorldmapUIwiring.png)
+![](source/images/WorldmapUIwiring.png)
 
 * Double-click both `inject` nodes (labeled `timestamp`) and tick the checkbox for ` Inject once after 0.1 seconds, then`. On the lower one, which feeds the `satellite` node, choose `Repeat` -> `interval` and set the interval to every `1` `minutes`.
 
