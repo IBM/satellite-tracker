@@ -16,11 +16,10 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Flow
 
-1. Step 1.
-2. Step 2.
-3. Step 3.
-4. Step 4.
-5. Step 5.
+1. User interacts with Web UI to query the chat bot "Where is the ISS?".
+2. Web UI communicates with Node-RED running on IBM Cloud.
+3. Node-RED app running on the cloud processes info and performs HTTP requests.
+4. Satellites orbiting the earth send position info which is streamed to Node-RED module.
 
 ## Included components
 
@@ -28,6 +27,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Featured technologies
 
+* [Node-RED](https://nodered.org/)Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.
 * [Artificial Intelligence](https://medium.com/ibm-data-science-experience): Artificial intelligence can be applied to disparate solution spaces to deliver disruptive technologies.
 * [Node.js](https://nodejs.org/): An open-source JavaScript run-time environment for executing server-side JavaScript code.
 
@@ -150,7 +150,9 @@ Once the `ISS_flow.json` is on your clipboard, Click the upper-right menu icon a
 
 # Links
 
-* [Demo on Youtube]()
+* [Node-RED satellite module](https://flows.nodered.org/node/node-red-contrib-satellites)
+* [Node-RED World Map](https://flows.nodered.org/node/node-red-contrib-web-worldmap)
+* [IBM Bot Asset Exchange](https://developer.ibm.com/code/exchanges/bots/)
 
 # Learn more
 
