@@ -62,9 +62,12 @@ $ git clone https://github.com/IBM/casis-satellite-tracker
 
 Create the [*Watson Assistant*](https://console.ng.bluemix.net/catalog/services/conversation) service by providing a name of your choice and clicking `Create`.
 
-Once created, you'll see the credentials for *username* and *password* that you should copy down to be used later. (Click `Show` to expose them).
+Once created, you'll see either the credentials for *username* and *password* or an IAM *apikey*, either of which you should copy down to be used later. (Click `Show` to expose them).
+
 
 ![](https://github.com/IBM/pattern-images/blob/master/watson-assistant/WatsonAssistantCredentials.png)
+
+![](https://github.com/IBM/pattern-images/blob/master/watson-assistant/watson_assistant_api_key.png)
 
 ### 3. Import the Watson Assistant workspace
 
