@@ -27,7 +27,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Featured technologies
 
-* [Node-RED](https://nodered.org/)Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.
+* [Node-RED](https://nodered.org/): Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.
 * [Artificial Intelligence](https://medium.com/ibm-data-science-experience): Artificial intelligence can be applied to disparate solution spaces to deliver disruptive technologies.
 * [Node.js](https://nodejs.org/): An open-source JavaScript run-time environment for executing server-side JavaScript code.
 
