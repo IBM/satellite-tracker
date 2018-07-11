@@ -1,5 +1,3 @@
-# WORK IN PROGRESS - Please Visit Soon for the Completed Code
-
 [![Build Status](https://travis-ci.org/IBM/casis-satellite-tracker.svg?branch=master)](https://travis-ci.org/IBM/casis-satellite-tracker)
 # CASIS Satellite Tracker
 
