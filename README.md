@@ -17,7 +17,8 @@ When the reader has completed this Code Pattern, they will understand how to:
 1. User interacts with Web UI to query the chat bot "Where is the ISS?".
 2. Web UI communicates with Node-RED running on IBM Cloud.
 3. Node-RED app running on the cloud processes info and performs HTTP requests.
-4. Satellites orbiting the earth send position info which is streamed to Node-RED module.
+4. The Node-RED app communicates with Watson Assistant to extract intents and entities.
+5. Satellites orbiting the earth send position info which is streamed to Node-RED module.
 
 ## Included components
 
