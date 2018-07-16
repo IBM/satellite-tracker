@@ -17,6 +17,9 @@ if (current_payload && current_payload.hasOwnProperty('display_name')){
     msg.payload.lon = Math.round(100*lon_string)/100;
 } else {
     // text-based answer
+    if (msg.mode) {
+        msg.payload.mode = msg.mode;
+    }
     msg.payload.message = msg.text;
     msg.payload.lat = undefined;
     msg.payload.lon = undefined;

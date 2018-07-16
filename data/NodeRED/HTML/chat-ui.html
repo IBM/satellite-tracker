@@ -169,8 +169,8 @@
     	    </div>
         </div>
         <div class="sat-track--map" id="WorldMap">
-            <iframe width="800" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="/worldmap"></iframe>
-            <br /><small><a href="./worldmap" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+            <iframe id="mode-iframe" width="800" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="./worldmap"></iframe>
+            <br /><small><a id="mode-link" href="./worldmap" style="color:#0000FF;text-align:left">View Larger Map</a></small>
         </div>
     </div>
 
@@ -233,14 +233,30 @@
             $('#id_chattext').val('');
         }
 
+        function switchMode(mode) {
+            if (mode === '3d') {
+                document.getElementById('mode-iframe').src = './earth'
+                document.getElementById('mode-link').href = './earth'
+            } else {
+                document.getElementById('mode-iframe').src = './worldmap'
+                document.getElementById('mode-link').href = './worldmap'
+            }
+
+        }
+
         function processOK(response) {
             console.log(response);
 
-            chat('Bot', response.message);
-            if (response.lat && response.lon) {
-                // sometimes text response only
-                chat('Bot', "Latitude: " + response.lat);
-                chat('Bot', "Longitude: " + response.lon);
+            if (response.mode) {
+                switchMode(response.mode)
+                chat('Bot', 'Mode Changed to ' + response.mode)
+            } else {
+                chat('Bot', response.message);
+                if (response.lat && response.lon) {
+                    // sometimes text response only
+                    chat('Bot', "Latitude: " + response.lat);
+                    chat('Bot', "Longitude: " + response.lon);
+                }
             }
             // $('#id_contextdump').data('convContext', response.botresponse.messageout.context);
         }
