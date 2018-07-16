@@ -169,8 +169,8 @@
     	    </div>
         </div>
         <div class="sat-track--map" id="WorldMap">
-            <iframe width="800" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://casissatellite1.mybluemix.net/worldmap/"></iframe>
-            <br /><small><a href="https://casissatellite1.mybluemix.net/worldmap/" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+            <iframe width="800" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="/worldmap"></iframe>
+            <br /><small><a href="./worldmap" style="color:#0000FF;text-align:left">View Larger Map</a></small>
         </div>
     </div>
 
@@ -234,7 +234,7 @@
         }
 
         function processOK(response) {
-            console.error(response);
+            console.log(response);
 
             chat('Bot', response.message);
             if (response.lat && response.lon) {
@@ -250,15 +250,15 @@
         }
 
         function invokeAjax(message) {
-            var contextdata = $('#id_contextdump').data('convContext');
-            console.error('checking stashed context data');
-            console.error(contextdata);
+            // var contextdata = $('#id_contextdump').data('convContext');
+            // console.error('checking stashed context data');
+            // console.error(contextdata);
 
             var ajaxData = {};
             ajaxData.msgdata = message;
-            if (contextdata) {
-                ajaxData.context = contextdata;
-            }
+            // if (contextdata) {
+            //     ajaxData.context = contextdata;
+            // }
 
             $.ajax({
                 type: 'POST',
