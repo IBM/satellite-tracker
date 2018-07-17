@@ -46,7 +46,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 1. [Get a LocationIQ API key](#6-get-a-locationiq-api-key)
 1. [Install additional nodes and Perform either 7a or 7b](#7-install-additional-nodes)
 
-    7a. [Build the Node-RED flow manually](doc/CreateFlow.md)
+    7a. [Build the Node-RED flow manually](doc/CreateFlowManually.md)
 
     7b. [Import the completed flow](#7b-import-the-completed-flow)
 
