@@ -151,6 +151,13 @@ Once the `ISS_flow.json` is on your clipboard, Click the upper-right menu icon a
 
 ![](https://github.com/IBM/pattern-images/blob/master/node-red/ImportNodeREDflowToClipboard.png)
 
+#### Configure the imported Flow
+
+* Double-click the `Assistant` node, and name it 'ISS Assistant'. Add the `username` and `password`, or the IAM `apikey`, and the `Workspace ID`  that you saved earlier when you created the Watson Assistant service.
+
+* Double click the `credentials` node. Click `+add` under the `Values` box and add the locationIQ API key to the `private` box and change the `to` box to be msg.`API_key`.
+
+
 # Sample output
 
 ![](doc/source/images/sample_output.png)
