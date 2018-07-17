@@ -1,3 +1,4 @@
+msg.assistant = msg.payload
 if (msg.payload.intents.length > 0 || msg.payload.entities.length >0){
  msg.payload = (new Date()).getTime()
 }

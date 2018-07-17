@@ -1,1 +1,0 @@
-https://us1.locationiq.org/v1/reverse.php?key={{{API_key}}}&lat={{{lat}}}&lon={{{lon}}}&format=json
