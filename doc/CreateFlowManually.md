@@ -65,6 +65,10 @@ The flow should look like this:
 
 * Finally, double-click the `http response` node and name it `Bot response`. Set the status code to `200`.
 
+* [Detailed video](https://ibm.box.com/s/po139lfl6yp7l58txe03y63ijz0bucbh)
+
+![video-to-gif](source/video/WatsonAssistantChatAPI.gif)
+
 ### Create the Handle Assistant Intents
 
 * We'll build the following:
@@ -87,6 +91,7 @@ function
 
 from each time array:
 function
+function
 
 from both functions:
 satellite
@@ -97,7 +102,7 @@ link node
 * Open up the switch node, name it `Assistant Intents`, and add the property `assistant.intents[0].intent` (after `msg.`).
 We'll have a total of 6 intents, so use the `+add` button to add 5 more. Name them: `what`,`where`,`where-historical`,`where-future`, `mode-2d`, and `mode-3d`.
 
-* Open the top function node, name it `Where is the ISS?`, and paste the [whatIsTheISS.js](../data/NodeRED/Functions/whatIsTheISS.js) code.
+* Open the top function node, name it `What is the ISS?`, and paste the [whatIsTheISS.js](../data/NodeRED/Functions/whatIsTheISS.js) code.
 
 * The satellite node should already have Sat. Type `Space Stations` and Satellite `ISS(ZARYA)`.
 
@@ -113,6 +118,10 @@ We'll have a total of 6 intents, so use the `+add` button to add 5 more. Name th
 
 * The final Satellite node should be the same as the first, with Satellite `ISS(ZARYA)`.
 
+* [Detailed video](https://ibm.box.com/s/4rny7vlf1o7q3bfdb5zs6trllfw2mzks)
+
+![video-to-gif](source/video/HandleAssitantIntents.gif)
+
 ### Create the HTML Chat UI
 
 * In your Node-RED flow editor, drag-and-drop nodes for `HTTP input`, `template`, and `HTTP response` and wire them together.
@@ -123,6 +132,10 @@ We'll have a total of 6 intents, so use the `+add` button to add 5 more. Name th
 
 * Name the http response node `Chat http response`.
 
+* [Detailed video](https://ibm.box.com/s/aq1q42g1d6oib6hwffcymnyw4uf070um)
+
+![video-to-gif](source/video/HTMLnodeRedSatTracker_fast.gif)
+
 ### Create the World Map UI
 
 * In the Node-RED flow editor, drag-and-drop 2 `link` nodes, an `inject` node, 4 `function` nodes, a `worldmap` node, an `earth` node,  and a `worldmap-tracks` node.
@@ -131,7 +144,7 @@ We'll have a total of 6 intents, so use the `+add` button to add 5 more. Name th
 
 ![](source/images/WorldmapUIwiring.png)
 
-* Double-click the `inject` node and tick the checkbox for ` Inject once after 0.1 seconds.
+* Double-click the `inject` node and tick the checkbox for  `Inject once after 0.1 seconds`.
 
 * Double-click the top function node (after the timestamp) and add the code for [add map layer](../data/NodeRED/Functions/addMapLayer.js). Name it `add map layer`.
 
@@ -139,9 +152,13 @@ We'll have a total of 6 intents, so use the `+add` button to add 5 more. Name th
 
 * Double-click the function node after `ISS to map`, and add the code for [move and zoom](..data/NodeRED/Functions/moveAndZoom.js). Name it `move and zoom`.
 
-* Double-click the last function node, between `tracks` and `earth`, name it `ISS Path to Line` and paste the code [ISSPathToLine.js](..data/NodeRED/Functions/ISSPathToLine.js).
+* Double-click the last function node, below `tracks` and above `earth`, name it `ISS Path to Line` and paste the code [ISSPathToLine.js](..data/NodeRED/Functions/ISSPathToLine.js).
 
 * The `worldmap`, `tracks`, and `earth` nodes do not need any configuring.
+
+* [Detailed video](https://ibm.box.com/s/6r04mju2xrgcfmoocyjgn3lwq7puyq2c)
+
+![video-to-gif](source/video/worldmapNodeRedSatTrack_fast.gif)
 
 ### Connect the Link nodes
 
@@ -172,6 +189,10 @@ You connect the link nodes by double-clicking and choosing the node they connect
 * Connect `ISS 2 OUT` to `ISS to Map IN` and `ISS Path to Line IN` (It's already connected to `Assistant output to Chat IN`):
 
 ![](source/images/ISS2OUTtoMapINpath2LineIN.png)
+
+* [Detailed video](https://ibm.box.com/s/3thnc37nsam9dkj8aapweiz4xu4wp1ih)
+
+![video-to-gif](source/video/LinksNodeREDsatelliteTracker_fast.gif)
 
 ### Deploy the App
 
