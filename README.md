@@ -126,7 +126,7 @@ Click the `Install tab` and enter the name of the node you wish to install into 
 
 ### 7.a Build the Node-RED flow manually
 
-Follow these instructions to [Build the Node-RED flow manually](doc/CreateFlow.md).
+Follow these instructions to [Build the Node-RED flow manually](doc/CreateFlowManually.md).
 
 ### 7.b Import the completed Flow
 
