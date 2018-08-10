@@ -49,6 +49,7 @@ When the reader has completed this Code Pattern, they will understand how to:
     7a. [Build the Node-RED flow manually](doc/CreateFlowManually.md)
 
     7b. [Import the completed flow](#7b-import-the-completed-flow)
+1. [Configure credentials](#8-configure-credentials)
 
 ### 1. Clone the repo
 
@@ -75,7 +76,7 @@ Once you have created your instance of Watson Assistant, click `Launch Tool`, th
 
 ![](https://github.com/IBM/pattern-images/blob/master/watson-assistant/UploadWorkspaceJson.png)
 
-Click `Choose a file` and navigate to [`data/workspaces/SatTrackWorkspace.json`](data/workspaces/SatTrackWorkspace.json) in this repo. Click `Import`.
+Click `Choose a file` and navigate to [`data/AssistantWorkspace/sat-tracker-workspace.json`](data/AssistantWorkspace/sat-tracker-workspace.json) in this repo. Click `Import`.
 
 Get the Workspace ID by clicking the 3 vertical dots on the `Workspaces` tab. Save this for later.
 
@@ -130,26 +131,34 @@ Follow these instructions to [Build the Node-RED flow manually](doc/CreateFlowMa
 
 ### 7.b Import the completed Flow
 
-We will walk through the steps to build the Node-RED flow, but you can import the completed Flow. Copy the flow to your machine's clipboard by navigating to `data/Node/`.
+We will walk through the steps to build the Node-RED flow, but you can import the completed Flow. Copy the flow to your machine's clipboard by navigating to `data/NodeRED/`.
 
 A flow can be moved to a Mac OS clipboard with:
 ```
-$ pbcopy < ISS_flow.json
+$ pbcopy < flow.json
 ```
 
 On Windows use:
 ```
-$ cat ISS_flow.json | clip
+$ cat flow.json | clip
 ```
 
 On Linux use:
 ```
-$ cat ISS_flow.json | xclip
+$ cat flow.json | xclip
 ```
 
-Once the `ISS_flow.json` is on your clipboard, Click the upper-right menu icon and choose `Import` -> `Clipboard`. Paste the contents of your clipboard and click `Import`.
+Once the `flow.json` is on your clipboard, Click the upper-right menu icon and choose `Import` -> `Clipboard`. Paste the contents of your clipboard and click `Import`.
 
 ![](https://github.com/IBM/pattern-images/blob/master/node-red/ImportNodeREDflowToClipboard.png)
+
+### 8. Configure credentials
+
+* Click on the `ISS Assistant` node and fill in either the `username` and `password` or th`API Key`, depending on which was part of your Watson Assistant credentials from [Get the Watson Assistant credentials](#4-get-the-watson-assistant-credentials).
+
+* Click on the `Credentials` node and put the locationIQ API key from [Get a LocationIQ API key](#6-get-a-locationiq-api-key) in the field `private`.
+
+> NOTE: After any changes, you will need to click the `Deploy` button to make them live.
 
 # Sample output
 
