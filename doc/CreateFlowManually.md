@@ -1,4 +1,5 @@
 # Build the Node-RED Flow Manually
+*Read this in other languages: [한국어](CreateFlowManually-ko.md).*
 
 In order to build the Node-RED flow for the CASIS satellite tracker, you will use the flow editor to add and connect nodes, and put configuration information and code in the appropriate node.
 
