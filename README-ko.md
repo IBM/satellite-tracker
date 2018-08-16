@@ -40,7 +40,7 @@
 ## Run locally
 
 1. [Git 저장소 복제하기](#1-git-저장소-복제하기)
-1. [IBM 클라우드에 왓슨 서비스 생성하기](#2-ibm-클라우드에-왓슷-서비스-생성하기)
+1. [IBM 클라우드에 왓슨 서비스 생성하기](#2-ibm-클라우드에-왓슨-서비스-생성하기)
 1. [Watson Assistant 워크스페이스 불러오기](#3-watson-assistant-워크스페이스-불러오기)
 1. [Watson Assistant 신임 정보 가져오기](#4-watson-assistant-신임-정보-가져오기)
 1. [Node-Red 워크스페이스 생성하기](#5-node-red-워크스페이스-생성하기)
@@ -87,7 +87,7 @@ Watson Assistant 인스턴스를 생성하고 나면 `Launch Tool` 버튼을 클
 
 ### 4. Watson Assistant 신임 정보 가져오기
 
-IBM Cloud Watson Assistant 서비스에 대한 신임 정보는 해당 서비스에서 ``Service Credentials`` 옵션을 선택해서 찾을 수 있습니다. 관련 내용은 이미 [step #2](#2-ibm-클라우드에-왓슷-서비스-생성하기) 에서 진행하였습니다.
+IBM Cloud Watson Assistant 서비스에 대한 신임 정보는 해당 서비스에서 ``Service Credentials`` 옵션을 선택해서 찾을 수 있습니다. 관련 내용은 이미 [step #2](#2-ibm-클라우드에-왓슨-서비스-생성하기) 에서 진행하였습니다.
 
 Watson Assistant 워크스페이스의 `WORKSPACE_ID` 는 [step #3](#3-watson-assistant-워크스페이스-불러오기) 에서 진행하였습니다.
 
@@ -173,9 +173,9 @@ $ cat flow.json | xclip
 
 # Learn more
 
-* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
-* **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
-* **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
+* **Artificial Intelligence Code Patterns**: 이 코드 패턴이 도움이 되셨나요? 다른 [AI 코드 패턴](https://developer.ibm.com/code/technologies/artificial-intelligence/)도 확인해보세요.
+* **AI and Data Code Pattern Playlist**: 다른 코드 패턴 영상과 함께 [플레이리스트](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde)를 즐겨찾기하세요.
+* **With Watson**: 애플리케이션을 다음 단계로 확장하고 싶으십니까? Watson 브랜드 에셋을 찾고 계신가요? [With Watson 프로그램에 가입하셔서 ](https://www.ibm.com/watson/with-watson/) 귀하에게만 제공되는 브랜드, 마케팅 및 기술 리소스를 활용하여 Watson 임베디드 상용 솔루션을 강화하고 가속화하십시오.
 
 # License
 [Apache 2.0](LICENSE)
