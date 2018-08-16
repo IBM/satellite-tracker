@@ -66,7 +66,7 @@ http response
 
 * 마지막으로 `http response` 노드를 더블 클릭 후 노드 이름을 `Bot response`로 변경합니다. 상태 코드를 `200`으로 변경합니다.
 
-* [Detailed video](https://ibm.box.com/s/po139lfl6yp7l58txe03y63ijz0bucbh)
+* [작업 영상](https://ibm.box.com/s/po139lfl6yp7l58txe03y63ijz0bucbh)
 
 ![video-to-gif](source/video/WatsonAssistantChatAPI.gif)
 
@@ -118,7 +118,7 @@ link node
 
 * 마지막 Satellite 노드는 첫 Satellite 노드와 마찬가지로 Satellite값이 `ISS(ZARYA)`로 설정되어 있습니다.
 
-* [Detailed video](https://ibm.box.com/s/4rny7vlf1o7q3bfdb5zs6trllfw2mzks)
+* [작업 영상](https://ibm.box.com/s/4rny7vlf1o7q3bfdb5zs6trllfw2mzks)
 
 ![video-to-gif](source/video/HandleAssitantIntents.gif)
 
@@ -132,7 +132,7 @@ link node
 
 * http response 노드의 이름을 `Chat http response`로 설정합니다.
 
-* [Detailed video](https://ibm.box.com/s/aq1q42g1d6oib6hwffcymnyw4uf070um)
+* [작업 영상](https://ibm.box.com/s/aq1q42g1d6oib6hwffcymnyw4uf070um)
 
 ![video-to-gif](source/video/HTMLnodeRedSatTracker_fast.gif)
 
@@ -156,7 +156,7 @@ link node
 
 * `worldmap`, `tracks`, 그리고 `earth` 노드는 다른 설정이 필요하지 않습니다.
 
-* [Detailed video](https://ibm.box.com/s/6r04mju2xrgcfmoocyjgn3lwq7puyq2c)
+* [작업 영상](https://ibm.box.com/s/6r04mju2xrgcfmoocyjgn3lwq7puyq2c)
 
 ![video-to-gif](source/video/worldmapNodeRedSatTrack_fast.gif)
 
@@ -191,7 +191,7 @@ link node
 
 ![](source/images/ISS2OUTtoMapINpath2LineIN.png)
 
-* [Detailed video](https://ibm.box.com/s/3thnc37nsam9dkj8aapweiz4xu4wp1ih)
+* [작업 영상](https://ibm.box.com/s/3thnc37nsam9dkj8aapweiz4xu4wp1ih)
 
 ![video-to-gif](source/video/LinksNodeREDsatelliteTracker_fast.gif)
 
