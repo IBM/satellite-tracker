@@ -15,7 +15,7 @@
 
 ## Flow
 
-1. 사용자가 웹 UI와 상호 작용하여 챗봇에 "ISS는 어디에 있습니까?"라고 문의합니다.
+1. 사용자가 웹 UI와 상호 작용하여 챗봇에 "Where is the ISS?"라고 문의합니다.
 2. 웹 UI는 IBM Cloud에서 실행중인 Node-RED와 통신합니다.
 3. 클라우드에서 실행되는 Node-RED 앱은 정보를 처리하고 HTTP 요청을 수행합니다.
 4. Node-RED 앱은 Watson Assistant와 통신하여 인텐트와 엔티티를 추출합니다.
