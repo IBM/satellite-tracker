@@ -125,7 +125,7 @@ Watson Assistant 워크스페이스의 `WORKSPACE_ID` 는 [step #3](#3-watson-as
 
 ### 7.a Node-Red 플로우 직접 작성하기
 
-다음 지침을 따라서 Node-RED 플로우를 빌드합니다 [Node-RED 플로우 직접 작성하기](doc/CreateFlowManually.md).
+다음 지침을 따라서 Node-RED 플로우를 빌드합니다 [Node-RED 플로우 직접 작성하기](doc/CreateFlowManually-ko.md).
 
 ### 7.b 완성된 플로우 가져오기
 
@@ -173,8 +173,8 @@ $ cat flow.json | xclip
 
 # Learn more
 
-* **Artificial Intelligence Code Patterns**: 이 코드 패턴이 도움이 되셨나요? 다른 [AI 코드 패턴](https://developer.ibm.com/code/technologies/artificial-intelligence/)도 확인해보세요.
-* **AI and Data Code Pattern Playlist**: 다른 코드 패턴 영상과 함께 [플레이리스트](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde)를 즐겨찾기하세요.
+* **Artificial Intelligence 코드 패턴**: 이 코드 패턴이 도움이 되셨나요? 다른 [AI 코드 패턴](https://developer.ibm.com/code/technologies/artificial-intelligence/)도 확인해보세요.
+* **AI 와 데이터 코드 패턴 플레이리스트**: 다른 코드 패턴 영상과 함께 [플레이리스트](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde)를 즐겨찾기하세요.
 * **With Watson**: 애플리케이션을 다음 단계로 확장하고 싶으십니까? Watson 브랜드 에셋을 찾고 계신가요? [With Watson 프로그램에 가입하셔서 ](https://www.ibm.com/watson/with-watson/) 귀하에게만 제공되는 브랜드, 마케팅 및 기술 리소스를 활용하여 Watson 임베디드 상용 솔루션을 강화하고 가속화하십시오.
 
 # License
