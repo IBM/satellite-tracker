@@ -37,8 +37,6 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 # Steps
 
-## Run locally
-
 1. [Clone the repo](#1-clone-the-repo)
 1. [Create Watson services with IBM Cloud](#2-create-watson-services-with-ibm-cloud)
 1. [Import the Watson Assistant workspace](#3-import-the-watson-assistant-workspace)
