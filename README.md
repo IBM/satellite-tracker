@@ -161,7 +161,7 @@ Once the `flow.json` is on your clipboard, Click the upper-right menu icon and c
 
 # Sample output
 
-![](doc/source/images/sample_output.png)
+![](doc/source/images/satTrackSampleOut.png)
 
 # Troubleshooting
 
