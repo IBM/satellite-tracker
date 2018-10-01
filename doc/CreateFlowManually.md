@@ -200,3 +200,8 @@ You connect the link nodes by double-clicking and choosing the node they connect
 Click `Deploy`
 
 ![](source/images/ClickDeploy.png)
+
+### View and use the App
+
+Use the running app by going to `<Node-RED_URL>/bot`
+

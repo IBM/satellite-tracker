@@ -153,13 +153,15 @@ Once the `flow.json` is on your clipboard, Click the upper-right menu icon and c
 
 ### 8. Configure credentials
 
-* Click on the `ISS Assistant` node and fill in either the `username` and `password` or th`API Key`, depending on which was part of your Watson Assistant credentials from [Get the Watson Assistant credentials](#4-get-the-watson-assistant-credentials).
+* Click on the `ISS Assistant` node and fill in either the `username` and `password` or the `API Key`, depending on which was part of your Watson Assistant credentials from [Get the Watson Assistant credentials](#4-get-the-watson-assistant-credentials).
 
 * Click on the `Credentials` node and put the locationIQ API key from [Get a LocationIQ API key](#6-get-a-locationiq-api-key) in the field `private`.
 
 > NOTE: After any changes, you will need to click the `Deploy` button to make them live.
 
 # Sample output
+
+Use the running app by going to `<Node-RED_URL>/bot`
 
 ![](doc/source/images/satTrackSampleOut.png)
 
