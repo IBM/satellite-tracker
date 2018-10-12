@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/IBM/casis-satellite-tracker.svg?branch=master)](https://travis-ci.org/IBM/casis-satellite-tracker)
 # CASIS Satellite Tracker
+
 *Read this in other languages: [한국어](README-ko.md).*
 
 In this Code Pattern, we will build a satellite tracker using  Node-RED and IBM Watson.
