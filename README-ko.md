@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/IBM/casis-satellite-tracker.svg?branch=master)](https://travis-ci.org/IBM/casis-satellite-tracker)
 # CASIS Satellite Tracker
-*다른 언어로 보기: [English](README.md).*
+*다른 언어로 보기: [English](README.md), [Español](README-es.md).*
 
 이 코드 패턴에서는 Node-RED와 IBM Watson을 사용하여 위성 추적기를 구축 할 것입니다. Watson Assistant Chatbot을 node-red-contrib-satellites 노드뿐만 아니라 웹 UI 및 월드 맵 노드에 연결하기 위한 플로우가 생성됩니다.
 
