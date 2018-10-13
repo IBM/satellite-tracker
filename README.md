@@ -1,6 +1,6 @@
 # CASIS Satellite Tracker
 
-*Read this in other languages: [한국어](README-ko.md).*
+*Read this in other languages: [한국어](README-ko.md), [Español](README-es.md).*
 
 In this Code Pattern, we will build a satellite tracker using  Node-RED and IBM Watson.
 A flow will be created for connecting a Watson Assistant Chatbot with a node-red-contrib-satellites node, as well as a web UI and worldmap node.
