@@ -62,7 +62,7 @@ $ git clone https://github.com/IBM/casis-satellite-tracker
 
 ### 2. IBM 클라우드에 왓슨 서비스 생성하기
 
-원하는 서비스 이름을 넣은 후 `Create`버튼을 눌러서 [*Watson Assistant*](https://console.ng.bluemix.net/catalog/services/conversation) 서비스를 생성합니다.
+원하는 서비스 이름을 넣은 후 `Create`버튼을 눌러서 [*Watson Assistant*](https://cloud.ibm.com/catalog/services/conversation) 서비스를 생성합니다.
 
 서비스가 생성되면 *유저이름* 과 *패스워드* 로 구성된 신임 정보 혹은 IAM *apikey* 신임 정보를 확인할 수 있습니다. 이중 하나를 나중에 사용하기 위해서 복사합니다.(별표로 된 부분을 확인을 위해 `Show`를 누릅니다).
 
@@ -93,7 +93,7 @@ Watson Assistant 워크스페이스의 `WORKSPACE_ID` 는 [step #3](#3-watson-as
 
 ### 5. Node-Red 워크스페이스 생성하기
 
-[IBM Cloud Catalog](https://console.bluemix.net/catalog/)에서 `Platform` -> `Boilerplates` 를 조회 후 [Node-RED Starter](https://console.bluemix.net/catalog/starters/node-red-starter)를 선택합니다. 앱 이름을 선택하고 `Create` 버튼을 누릅니다.
+[IBM Cloud Catalog](https://cloud.ibm.com/catalog/)에서 `Platform` -> `Boilerplates` 를 조회 후 [Node-RED Starter](https://cloud.ibm.com/catalog/starters/node-red-starter)를 선택합니다. 앱 이름을 선택하고 `Create` 버튼을 누릅니다.
 
 앱 배치가 완료되면 `Visit App URL`을 클릭합니다.
 

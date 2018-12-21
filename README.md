@@ -60,7 +60,7 @@ $ git clone https://github.com/IBM/casis-satellite-tracker
 
 ### 2. Create Watson services with IBM Cloud
 
-Create the [*Watson Assistant*](https://console.ng.bluemix.net/catalog/services/conversation) service by providing a name of your choice and clicking `Create`.
+Create the [*Watson Assistant*](https://cloud.ibm.com/catalog/services/conversation) service by providing a name of your choice and clicking `Create`.
 
 Once created, you'll see either the credentials for *username* and *password* or an IAM *apikey*, either of which you should copy down to be used later. (Click `Show` to expose them).
 
@@ -94,7 +94,7 @@ The `WORKSPACE_ID` for the Watson Assistant workspace was saved in
 
 ### 5. Create a Node-RED Workspace
 
-From the the [IBM Cloud Catalog](https://console.bluemix.net/catalog/) navigate to `Platform` -> `Boilerplates` and choose [Node-RED Starter](https://console.bluemix.net/catalog/starters/node-red-starter). Choose a name and click `Create`.
+From the the [IBM Cloud Catalog](https://cloud.ibm.com/catalog/) navigate to `Platform` -> `Boilerplates` and choose [Node-RED Starter](https://cloud.ibm.com/catalog/starters/node-red-starter). Choose a name and click `Create`.
 
 Once the App has deployed, click on `Visit App URL`
 
