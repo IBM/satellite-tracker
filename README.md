@@ -1,3 +1,7 @@
+# WARNING: This repository is no longer maintained :warning:
+
+> This repository will not be updated. The repository will be kept available in read-only mode.
+
 # CASIS Satellite Tracker
 
 *Read this in other languages: [한국어](README-ko.md), [Español](README-es.md).*
